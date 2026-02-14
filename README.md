@@ -305,16 +305,6 @@ The dashboard contains **3 main pages**:
 # 👨‍💻 Author
 
 **Sathya**
+
 Data Analyst | Python | SQL
 
----
-
-If you want, I can now also:
-
-* 🔥 Create a **professional GitHub project description**
-* 📊 Create a **LinkedIn project post**
-* 🎤 Create a **Capstone explanation script**
-* 🏆 Create a **resume-ready project description**
-* 🗂️ Generate a clean folder structure for GitHub**
-
-Just tell me which one you want.
