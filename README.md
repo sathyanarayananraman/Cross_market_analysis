@@ -30,13 +30,12 @@ The goal is to answer:
 * Multi-Table Joins
 * Financial Data Analysis
 * Streamlit Dashboard Development
-* Business Intelligence (BI) Reporting
 
 ---
 
 ## 🌍 Domain
 
-**Financial Analytics | Business Intelligence | Data Engineering**
+** Financial Analytics **
 
 ---
 
@@ -99,8 +98,6 @@ Streamlit Dashboard (Visualization Layer)
 * Data:
 
   * Coin metadata
-  * 1-year historical prices (Top 3 coins by market cap)
-
 ---
 
 ### 🛢️ Oil Prices
@@ -125,12 +122,18 @@ Streamlit Dashboard (Visualization Layer)
 
 ## 1️⃣ Table: `cryptocurrencies`
 
-| Column          | Type           | Description        |
-| --------------- | -------------- | ------------------ |
-| id              | VARCHAR(50) PK | CoinGecko ID       |
-| symbol          | VARCHAR(10)    | Coin symbol        |
-| name            | VARCHAR(100)   | Coin name          |
-| market_cap_rank | INT            | Rank by market cap |
+| Column                | Type           | Description           |
+| ---------------       | -------------- | ------------------    |
+| id                    | VARCHAR(50) PK | CoinGecko ID          |
+| symbol                | VARCHAR(10)    | Coin symbol           |
+| name                  | VARCHAR(100)   | Coin name             |
+| Market_cap            | BIGINT         | Coin name             |                     
+| market_cap_rank       | INT            | Rank by market cap    |
+| total_volume          | BIGINT         | Trading volume        |
+| circulating_supply    | DECIMAL(20, 6) | Coins in circulation  |
+| ath                   | DECIMAL(20, 6) | All-time high price   |
+| atl                   | DECIMAL(20, 6) | All-time low price    |
+| date                  | DECIMAL(20, 6) | Last updated timestamp|
 
 ---
 
@@ -138,9 +141,9 @@ Streamlit Dashboard (Visualization Layer)
 
 | Column    | Type           | Description                   |
 | --------- | -------------- | ----------------------------- |
-| coin_id   | VARCHAR(50) FK | Reference to cryptocurrencies |
+| id        | VARCHAR(50) FK | Reference to cryptocurrencies |
 | date      | DATE           | Price date                    |
-| price_usd | DECIMAL(18,6)  | Daily price                   |
+| price_inr | DECIMAL(18,6)  | Daily price                   |
 
 ---
 
@@ -196,6 +199,11 @@ Streamlit Dashboard (Visualization Layer)
 * Coins near ATH
 * Average market cap rank
 * Supply ratio analysis
+* coins where circulating supply exceeds 90% of total supply
+* coins  within 10% of their all-time-high (ATH)
+* average market cap rank of coins with volume above $1B
+* most recently updated coin.
+ 
 
 ## 🔹 Crypto Price Analysis
 
@@ -273,7 +281,7 @@ The dashboard contains **3 main pages**:
 
 * Python
 * Pandas
-* SQL (MySQL / PostgreSQL / SQLite)
+* SQL (MySQL)
 * Streamlit
 * CoinGecko API
 * Yahoo Finance
@@ -302,9 +310,5 @@ The dashboard contains **3 main pages**:
 
 ---
 
-# 👨‍💻 Author
 
-**Sathya**
-
-Data Analyst | Python | SQL
 
