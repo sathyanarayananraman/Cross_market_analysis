@@ -282,51 +282,6 @@ The dashboard contains **3 main pages**:
 
 ---
 
-# 🚀 Installation Guide
-
-## 1️⃣ Clone Repository
-
-```bash
-git clone https://github.com/yourusername/cross-market-analysis.git
-cd cross-market-analysis
-```
-
----
-
-## 2️⃣ Create Virtual Environment
-
-```bash
-python -m venv venv
-source venv/bin/activate   # Mac/Linux
-venv\Scripts\activate      # Windows
-```
-
----
-
-## 3️⃣ Install Requirements
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 4️⃣ Setup Database
-
-* Create database
-* Run schema creation script
-* Run data ingestion script
-
----
-
-## 5️⃣ Run Streamlit App
-
-```bash
-streamlit run app.py
-```
-
----
-
 # 📈 Expected Outcomes
 
 ✅ Clean relational SQL database
